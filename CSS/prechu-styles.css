@@ -1,0 +1,216 @@
+/* ----------- NO FLEX OR GRID ---------- */
+
+/* ==== Basic CSS Reset ==== */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* ==== End CSS Reset ==== */
+
+/* ------------ GLOBAL RULES ------------ */
+/*~ ------------ COLOR PALLETE ----------- */
+:root {
+  --white: #ffffffff;
+  --blue: #5094f2ff;
+  --gray: #787a7cff;
+}
+
+.inner {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+/* ---------- END GLOBAL RULES ---------- */
+
+.top-bar {
+  position: relative;
+}
+
+.top-header,
+.top-nav {
+  display: inline-block;
+}
+
+.top-header h1,
+.top-header img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.top-header h1 {
+  margin-top: 8px;
+  font-weight: 200;
+}
+
+.top-nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+}
+
+.nav-list a {
+  display: inline-block;
+  padding: 15px 5px;
+  text-decoration: none;
+  color: #111;
+}
+
+.nav-list a:hover {
+  border-bottom: solid var(--blue) 2px;
+}
+
+/* ------------ HERO SECTION ------------ */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+  border-bottom: dotted gray 3px;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(63, 62, 62, 0.9);
+  background-image: url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+  background-blend-mode: multiply;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.hero-section img {
+  margin-left: 50px;
+}
+
+.hero-copy-container {
+  float: right;
+  margin-top: 15%;
+  margin-right: 20%;
+  line-height: 1.75;
+  color: #eee; /* todo: maybe change color */
+}
+.hero-header {
+  font-weight: 200;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero-header-details {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+.sign-up-button {
+  display: inline-block;
+  padding: 0px 12px;
+  margin-top: 25px;
+  margin-left: 15px;
+  background: var(--blue);
+  color: white;
+  text-decoration: none;
+}
+
+/* -------------- END HERO -------------- */
+
+/* ---------- Items SECTION ---------- */
+
+.items-section {
+  margin-bottom: 100px;
+}
+
+.item-card {
+  float: left;
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+.image-name {
+  margin-bottom: 5px;
+  color: var(--blue);
+}
+
+/* -------------- END ITEMS ------------- */
+
+/* ------- START SHOPPING SECTION ------- */
+
+.shopping-section {
+  border-bottom: dotted #555 2px;
+}
+
+.shopping-half {
+  float: left;
+  width: calc(100% / 2);
+}
+
+.first-half {
+  text-align: center;
+}
+
+.shopping-header {
+  margin-left: 25px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #333;
+  font-weight: 300;
+}
+
+.bulleted-header {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.shopping-half li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* --------------- FOOTER --------------- */
+footer {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--gray);
+}
